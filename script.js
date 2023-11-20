@@ -42,11 +42,14 @@ function generatePassword() {
                 case 'S':
                     char += alphabet.S;
                     break;
+                default :
+                    char += "";
+                    break;
             }
         }
     });
 
-    for (let i = 0; i < passwordLength; i++) {
+    for (let i = 0;char.length > 0 && i < passwordLength; i++) {
         const rand = Math.floor(Math.random() * char.length);
         password += char[rand];
     }
