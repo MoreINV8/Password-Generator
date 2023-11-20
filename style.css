@@ -4,6 +4,111 @@
     box-sizing: border-box;
 }
 
+body {
+    background: #DC8686;
+}
+
+.container {
+    width: 80%;
+    margin: 13% auto;
+}
+
+.container h2 {
+    font-size: 40px;
+    font-weight: 500;
+    color: #F0DBAF;
+}
+
+.container h2 span {
+    color: #7ED7C1;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #7ED7C1;
+}
+
+.password-field {
+    margin: 60px 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    border-radius: 8px;
+    width: 80%;
+}
+
+.password-field input {
+    border: none;
+    outline: none;
+    background: transparent;
+    flex: 1;
+    padding: 12px 30px;
+}
+
+.password-field img {
+    width: 20px;
+    cursor: pointer;
+}
+
+.container button {
+    border: none;
+    outline: none;
+    background: #F0DBAF;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    padding: 15px 20px;
+    transition: all 0.4s;
+    margin-bottom: 20px;
+}
+
+.container button img {
+    width: 20px;
+    margin-right: 20px;
+}
+
+.container button:hover {
+    background: rgba(240,219,175, 0.3);
+    border: 1px solid #F0DBAF;
+}
+
+.container ul {
+    width: 60%;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.option {
+    list-style: none;
+    padding: 5px 40px;
+    color: #7ED7C1;
+    font-size: 18px;
+    position: relative;
+    cursor: pointer;
+}
+
+.option::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url(images/checked.png);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    left: 0;
+}
+
+.unchecked {
+    font-weight: 1000;
+}
+
+.unchecked::before {
+    background-image: url(images/unchecked.png);
+}
+
 /* 
 color code
 #7ED7C1

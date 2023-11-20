@@ -3,9 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="container">
+        <h2>Generate A</br><span>Random Password</span></h2>
+        <div class="password-field">
+            <input type="text" placeholder="Password">
+            <img src="images/copy.png">
+        </div>
+        <button class="generate"><img src="images/generate.png">Generate Password</button>
+        <ul class="status">
+            <li class="option unchecked">Uppercase Letter</li>
+            <li class="option">Lowercase Letter</li>
+            <li class="option">Numerical Letter</li>
+            <li class="option">Symbolic Letter</li>
+        </ul>
+    </div>
+     
+    <script src="script.js"></script>
 </body>
 </html>
